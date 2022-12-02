@@ -9,8 +9,59 @@
   <name>jmsproducerconsumerprojectCompositeApplication</name>
   <description>jmsproducerconsumerprojectCompositeApplication</description>
   <properties>
+    <com.srosales.jms.producer.consumerproject.sequence_._FaultSequence>capp/EnterpriseServiceBus</com.srosales.jms.producer.consumerproject.sequence_._FaultSequence>
+    <com.srosales.jms.producer.consumerproject.sequence_._Fault>capp/EnterpriseServiceBus</com.srosales.jms.producer.consumerproject.sequence_._Fault>
+    <com.srosales.jms.producer.consumerproject.sequence_._AddDoctorSequence>capp/EnterpriseServiceBus</com.srosales.jms.producer.consumerproject.sequence_._AddDoctorSequence>
+    <com.srosales.jms.producer.consumerproject.inbound-endpoint_._jms_inbound>capp/EnterpriseServiceBus</com.srosales.jms.producer.consumerproject.inbound-endpoint_._jms_inbound>
+    <com.srosales.jms.producer.consumerproject.endpoint_._addDoctorEp>capp/EnterpriseServiceBus</com.srosales.jms.producer.consumerproject.endpoint_._addDoctorEp>
+    <com.srosales.jms.producer.consumerproject.sequence_._RegisterDoctorInSequence>capp/EnterpriseServiceBus</com.srosales.jms.producer.consumerproject.sequence_._RegisterDoctorInSequence>
+    <com.srosales.jms.producer.consumerproject.api_._HospitalServiceApi>capp/EnterpriseServiceBus</com.srosales.jms.producer.consumerproject.api_._HospitalServiceApi>
     <artifact.types>jaggery/app=zip,synapse/priority-executor=xml,synapse/inbound-endpoint=xml,service/rule=aar,synapse/message-store=xml,event/stream=json,service/meta=xml,datasource/datasource=xml,synapse/proxy-service=xml,bpel/workflow=zip,synapse/sequence=xml,synapse/endpointTemplate=xml,carbon/application=car,wso2/gadget=dar,synapse/api=xml,synapse/event-source=xml,synapse/message-processors=xml,event/receiver=xml,lib/dataservice/validator=jar,synapse/template=xml,synapse/endpoint=xml,lib/carbon/ui=jar,lib/synapse/mediator=jar,event/publisher=xml,synapse/local-entry=xml,synapse/task=xml,webapp/jaxws=war,registry/resource=zip,synapse/configuration=xml,service/axis2=aar,synapse/lib=zip,synapse/sequenceTemplate=xml,event/execution-plan=siddhiql,service/dataservice=dbs,web/application=war,lib/library/bundle=jar</artifact.types>
   </properties>
+  <dependencies>
+    <dependency>
+      <groupId>com.srosales.jms.producer.consumerproject.api</groupId>
+      <artifactId>HospitalServiceApi</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.srosales.jms.producer.consumerproject.endpoint</groupId>
+      <artifactId>addDoctorEp</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.srosales.jms.producer.consumerproject.inbound-endpoint</groupId>
+      <artifactId>jms_inbound</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.srosales.jms.producer.consumerproject.sequence</groupId>
+      <artifactId>AddDoctorSequence</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.srosales.jms.producer.consumerproject.sequence</groupId>
+      <artifactId>Fault</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.srosales.jms.producer.consumerproject.sequence</groupId>
+      <artifactId>FaultSequence</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.srosales.jms.producer.consumerproject.sequence</groupId>
+      <artifactId>RegisterDoctorInSequence</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+  </dependencies>
   <repositories>
     <repository>
       <releases>
